@@ -1,0 +1,19 @@
+# Node & build artefacts
+node_modules
+.dist
+dist
+dist-ssr
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Env files
+.env*
+
+# IDE / OS misc
+.vscode/
+.idea/
+.DS_Store
