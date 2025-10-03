@@ -18,18 +18,17 @@ A fully-featured, React + Vite web application that recreates the Windows 11/12 
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Install dependencies
-pnpm i # or npm i / yarn
+npm install
 
 # Start the dev server
-pnpm dev
+npm run dev
 
 # Build for production
-pnpm build
-pnpm preview
+npm run build
 ```
 
 The development server will start on `http://localhost:5173` by default.
@@ -56,7 +55,7 @@ project/
 
 ---
 
-## ✅ Phase 1 – Core Desktop (Finished)
+## Phase 1 – Core Desktop (Finished)
 Phase 1 delivered a working replica of the Windows desktop environment:
 
 * Desktop with draggable SVG icons & context menu
