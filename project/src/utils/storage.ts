@@ -254,13 +254,15 @@ function getDefaultIcons(): DesktopIcon[] {
     // First column
     { id: '1', label: 'Recycle Bin', icon: 'recycle-bin', x: 32, y: 32, type: 'system' },
     { id: '3', label: 'File Explorer', icon: 'folder', x: 32, y: 140, type: 'app', path: '/Documents' },
-    { id: '4', label: 'Chrome', icon: 'chrome', x: 32, y: 248, type: 'app' },
-    { id: '5', label: 'Excel', icon: 'excel', x: 32, y: 356, type: 'app' },
-    { id: '6', label: 'Word', icon: 'word', x: 32, y: 464, type: 'app' },
+    { id: '10', label: 'Notepad', icon: '📝', x: 32, y: 248, type: 'app' },
+    { id: '11', label: 'Calculator', icon: '🧮', x: 32, y: 356, type: 'app' },
+    { id: '12', label: 'Paint', icon: '🎨', x: 32, y: 464, type: 'app' },
     // Second column
-    { id: '8', label: 'Cursor AI', icon: 'cursor', x: 160, y: 32, type: 'app' },
-    { id: '9', label: 'PowerPoint', icon: 'powerpoint', x: 160, y: 140, type: 'app' },
-    { id: '7', label: 'VS Code', icon: 'vscode', x: 160, y: 248, type: 'app' },
+    { id: '13', label: 'Task Manager', icon: '📋', x: 160, y: 32, type: 'app' },
+    { id: '4', label: 'Chrome', icon: 'chrome', x: 160, y: 140, type: 'app' },
+    { id: '5', label: 'Excel', icon: 'excel', x: 160, y: 248, type: 'app' },
+    { id: '6', label: 'Word', icon: 'word', x: 160, y: 356, type: 'app' },
+    { id: '8', label: 'Cursor AI', icon: 'cursor', x: 160, y: 464, type: 'app' },
   ];
 }
 

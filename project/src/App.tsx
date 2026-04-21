@@ -18,6 +18,7 @@ import {
   WordIcon, VSCodeIcon, CursorAIIcon, PowerPointIcon 
 } from './components/Icons/AppIcons';
 import FileExplorer from './components/FileExplorer';
+import { Notepad, Calculator, Paint, TaskManager, RecycleBin } from './components/Apps';
 
 function App() {
   const [widgetsOpen, setWidgetsOpen] = useState(false);
@@ -333,6 +334,63 @@ function App() {
                   // Special handling for specific apps
                   if (icon.label === 'File Explorer' || icon.icon === 'folder') {
                     content = <FileExplorer />;
+                  } else if (icon.label === 'Notepad') {
+                    const windowId = Date.now().toString();
+                    content = (
+                      <Notepad
+                        windowId={windowId}
+                        onClose={() => closeWindow(windowId)}
+                        onMinimize={() => minimizeWindow(windowId)}
+                        onMaximize={() => {}}
+                        isMaximized={false}
+                      />
+                    );
+                  } else if (icon.label === 'Calculator') {
+                    const windowId = Date.now().toString();
+                    content = (
+                      <Calculator
+                        windowId={windowId}
+                        onClose={() => closeWindow(windowId)}
+                        onMinimize={() => minimizeWindow(windowId)}
+                        onMaximize={() => {}}
+                        isMaximized={false}
+                      />
+                    );
+                  } else if (icon.label === 'Paint') {
+                    const windowId = Date.now().toString();
+                    content = (
+                      <Paint
+                        windowId={windowId}
+                        onClose={() => closeWindow(windowId)}
+                        onMinimize={() => minimizeWindow(windowId)}
+                        onMaximize={() => {}}
+                        isMaximized={false}
+                      />
+                    );
+                  } else if (icon.label === 'Task Manager') {
+                    const windowId = Date.now().toString();
+                    content = (
+                      <TaskManager
+                        windowId={windowId}
+                        onClose={() => closeWindow(windowId)}
+                        onMinimize={() => minimizeWindow(windowId)}
+                        onMaximize={() => {}}
+                        isMaximized={false}
+                        openWindows={windows}
+                        onEndTask={closeWindow}
+                      />
+                    );
+                  } else if (icon.label === 'Recycle Bin') {
+                    const windowId = Date.now().toString();
+                    content = (
+                      <RecycleBin
+                        windowId={windowId}
+                        onClose={() => closeWindow(windowId)}
+                        onMinimize={() => minimizeWindow(windowId)}
+                        onMaximize={() => {}}
+                        isMaximized={false}
+                      />
+                    );
                   } else {
                     content = <div className="p-4"><h2 className="text-xl font-bold mb-2">{icon.label}</h2><p>This is a placeholder for {icon.label} app.</p></div>;
                   }
