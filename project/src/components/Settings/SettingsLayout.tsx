@@ -3,13 +3,6 @@ import SettingsSidebar from './SettingsSidebar';
 import SettingsTopBar from './SettingsTopBar';
 import SettingsHome from './pages/SettingsHome';
 import PlaceholderPage from './pages/PlaceholderPage';
-import { SystemSettings } from './pages/SystemSettings';
-import { AppsSettings } from './pages/AppsSettings';
-import { NetworkSettings } from './pages/NetworkSettings';
-import { AccountsSettings } from './pages/AccountsSettings';
-import { TimeLanguageSettings } from './pages/TimeLanguageSettings';
-import { AccessibilitySettings } from './pages/AccessibilitySettings';
-import { UpdateSettings } from './pages/UpdateSettings';
 
 interface SettingsLayoutProps {
   onClose: () => void;
@@ -25,27 +18,27 @@ function SettingsLayout({ onClose, onMinimize, onWallpaperChange }: SettingsLayo
       case 'home':
         return <SettingsHome onWallpaperChange={onWallpaperChange} />;
       case 'system':
-        return <SystemSettings />;
+        return <PlaceholderPage title="System" description="System settings will be implemented in future steps" />;
       case 'bluetooth':
         return <PlaceholderPage title="Bluetooth & devices" description="Bluetooth settings will be implemented in future steps" />;
       case 'network':
-        return <NetworkSettings />;
+        return <PlaceholderPage title="Network & internet" description="Network settings will be implemented in future steps" />;
       case 'personalization':
         return <PlaceholderPage title="Personalization" description="Advanced personalization settings will be implemented in future steps" />;
       case 'apps':
-        return <AppsSettings />;
+        return <PlaceholderPage title="Apps" description="Apps settings will be implemented in future steps" />;
       case 'accounts':
-        return <AccountsSettings />;
+        return <PlaceholderPage title="Accounts" description="Account settings will be implemented in future steps" />;
       case 'time':
-        return <TimeLanguageSettings />;
+        return <PlaceholderPage title="Time & language" description="Time & language settings will be implemented in future steps" />;
       case 'gaming':
         return <PlaceholderPage title="Gaming" description="Gaming settings will be implemented in future steps" />;
       case 'accessibility':
-        return <AccessibilitySettings />;
+        return <PlaceholderPage title="Accessibility" description="Accessibility settings will be implemented in future steps" />;
       case 'privacy':
         return <PlaceholderPage title="Privacy & security" description="Privacy settings will be implemented in future steps" />;
       case 'update':
-        return <UpdateSettings />;
+        return <PlaceholderPage title="Windows Update" description="Update settings will be implemented in future steps" />;
       default:
         return <SettingsHome onWallpaperChange={onWallpaperChange} />;
     }
