@@ -24,7 +24,7 @@ function SettingsLayout({ onClose, onMinimize, onWallpaperChange }: SettingsLayo
       case 'network':
         return <PlaceholderPage title="Network & internet" description="Network settings will be implemented in future steps" />;
       case 'personalization':
-        return <PlaceholderPage title="Personalization" description="Advanced personalization settings will be implemented in Step 2" />;
+        return <PlaceholderPage title="Personalization" description="Advanced personalization settings will be implemented in future steps" />;
       case 'apps':
         return <PlaceholderPage title="Apps" description="Apps settings will be implemented in future steps" />;
       case 'accounts':
